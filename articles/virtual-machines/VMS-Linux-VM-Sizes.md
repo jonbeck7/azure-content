@@ -1,6 +1,6 @@
 <properties
- pageTitle="Virtual machine sizes | Microsoft Azure"
- description="Lists the different sizes for virtual machines and their capacities."
+ pageTitle="Virtual machine sizes for Linux | Microsoft Azure"
+ description="Lists the different sizes for virtual machines and their capacities for Linux."
  services="virtual-machines"
  documentationCenter=""
  authors="cynthn"
@@ -14,7 +14,7 @@ ms.service="virtual-machines"
  ms.topic="article"
  ms.tgt_pltfrm="vm-multiple"
  ms.workload="infrastructure-services"
- ms.date="01/05/2016"
+ ms.date="02/25/2016"
  ms.author="cynthn"/>
 
 # Sizes for virtual machines
@@ -35,7 +35,7 @@ The standard sizes consist of several series: A, D, DS, G, and GS. Consideration
 
 *   G-series VMs offer the most memory and run on hosts that have Intel Xeon E5 V3 family processors.
 
-*   DS-series and GS-series VMs can use Premium Storage, which provides high-performance, low-latency storage for I/O intensive workloads. These VMs use solid-state drives (SSDs) to host a virtual machine’s disks and also provide a local SSD disk cache. Premium Storage is available in certain regions. For details, see [Premium Storage: High-performance storage for Azure virtual machine workloads](../storage/storage-premium-storage.md).
+*   DS-series and GS-series VMs can use Premium Storage, which provides high-performance, low-latency storage for I/O intensive workloads. These VMs use solid-state drives (SSDs) to host a virtual machine’s disks and also provide a local SSD disk cache. Premium Storage is available in certain regions. For details, see [Premium Storage: High-performance storage for Azure virtual machine workloads](../storage-premium-storage-preview-portal.md).
 
 *   The A-series VMs can be deployed on a variety of hardware types and processors. The size is throttled, based upon the hardware, to offer consistent processor performance for the running instance, regardless of the hardware it is deployed on. To determine the physical hardware on which this size is deployed, query the virtual hardware from within the Virtual Machine.
 
@@ -87,17 +87,6 @@ The following tables show the sizes and the capacities they provide.
 
 <br>
 
-
-
-## Standard tier: A-series
-
-In the classic deployment model, some VM sizes are slightly different in Powershell and CLI.
-
-* Standard_A0 is ExtraSmall 
-* Standard_A1 is Small
-* Standard_A2 is Medium
-* Standard_A3 is Large
-* Standard_A4 is ExtraLarge
 
 <br>
 
@@ -164,7 +153,7 @@ Note: For information and considerations about using these sizes, see [About the
 |Standard_DS13 |8|56|8|Local SSD disk = 112 GB |16|288| 25,600  256 MB per second |
 |Standard_DS14 |16|112|8|Local SSD disk = 224 GB |32|576| 50,000  512 MB per second |
 
-*The maximum input/output operations per second (IOPS) and throughput (bandwidth) possible with a DS series VM is affected by the size of the disk. For details, see [Premium Storage: High-performance storage for Azure virtual machine workloads](../storage/storage-premium-storage.md).
+*The maximum input/output operations per second (IOPS) and throughput (bandwidth) possible with a DS series VM is affected by the size of the disk. For details, see [Premium Storage: High-performance storage for Azure virtual machine workloads](storage-premium-storage-preview-portal.md).
 
 ## Standard tier: G-series
 
